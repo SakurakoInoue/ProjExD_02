@@ -48,6 +48,9 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: 
                 return
+        if kk_rct.colliderect(bb_rct):
+            print("GAMEOVER")
+            return
             
         key_lst = pg.key.get_pressed()
         sum_mv = [0, 0]
@@ -71,7 +74,7 @@ def main():
         screen.blit(bb_img, bb_rct)
         pg.display.update()
         tmr += 1
-        clock.tick(1000)
+        clock.tick(50)
 
 
 if __name__ == "__main__":
