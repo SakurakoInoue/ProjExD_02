@@ -152,7 +152,7 @@ def main():
                     kk_img = kk_img_up
                 elif movement[0] == 0 and movement[1] > 0:
                     kk_img = kk_img_down
-                if movement[0] > 0:
+                elif movement[0] > 0:
                     kk_img = kk_img_left
                 elif movement[0] < 0:
                     kk_img = kk_img_right
@@ -184,5 +184,3 @@ if __name__ == "__main__":
     main()
     pg.quit()
     sys.exit()
-    
-    #コミット間違い
