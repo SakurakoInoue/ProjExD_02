@@ -184,3 +184,5 @@ if __name__ == "__main__":
     main()
     pg.quit()
     sys.exit()
+    
+    #コミット間違い
